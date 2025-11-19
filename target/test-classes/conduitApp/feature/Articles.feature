@@ -9,7 +9,7 @@ Feature: Articles
         # aquio chamo a classe Datagenerator, onde estou criando dados fakes
         * def datagenerator = Java.type('helpers.DataGenerator')
 
-        # aqui chamo o objeto json que criei na classe para adicionar no os dados no payload do newArticleRequest
+        # aqui seto os valores do payload com os dados fakes que criei na classe java
         * set articleRequestBody.article.title = datagenerator.GetRandomArticleValues().title
         * set articleRequestBody.article.description = datagenerator.GetRandomArticleValues().description
         * set articleRequestBody.article.body = datagenerator.GetRandomArticleValues().body

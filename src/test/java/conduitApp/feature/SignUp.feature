@@ -1,4 +1,4 @@
-git reset --soft HEAD~1@debug
+
 Feature: Cadastrar Novo usuário
 
     Background: Precondicoes
@@ -23,6 +23,8 @@ Feature: Cadastrar Novo usuário
         ####################################################################################
 
         Given path 'users'
+        # o print da um console.log na variavel escolhida
+        * print randomEmail
         And request 
         """
         {
