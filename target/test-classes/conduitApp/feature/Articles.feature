@@ -2,7 +2,17 @@
 Feature: Articles
 
     Background: Define URL
-        Given url apiUrl
+        # aqui seto o URL
+        * url apiUrl
+        # aqui importo o payload que vou utilizar para dar o post
+        * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')
+        # aquio chamo a classe Datagenerator, onde estou criando dados fakes
+        * def datagenerator = Java.type('helpers.DataGenerator')
+
+        # aqui chamo o objeto json que criei na classe para adicionar no os dados no payload do newArticleRequest
+        * set articleRequestBody.article.title = datagenerator.GetRandomArticleValues().title
+        * set articleRequestBody.article.description = datagenerator.GetRandomArticleValues().description
+        * set articleRequestBody.article.body = datagenerator.GetRandomArticleValues().body
 
         # Posso utilizar dessa forma também como Backgoud, porém também posso puxar da pasta helpers a criação do token
         # Given path 'users/login'
@@ -16,14 +26,14 @@ Feature: Articles
 
     Scenario: Criar novo artigo
         Given path 'articles'
-        And request {"article": {"taglist": [],"title": "Teste com Karate 22","description": "teste karate","body": "body"}}
+        And request articleRequestBody
         When method Post
         Then status 201
-        And response.article.title == 'Teste com Karate 22'
+        And response.article.title == articleRequestBody.article.title
     
     Scenario: Criar e Deletar artigo criado
         And path 'articles'
-        And request {"article": {"taglist": [],"title": "Delete Article","description": "Artigo a ser deletado","body": "body"}}
+        And request articleRequestBody
         When method Post
         Then status 201
         * def articleid = response.article.slug
@@ -32,7 +42,7 @@ Feature: Articles
         Given params { limit: 10, offset:0}
         When method Get
         Then status 200
-        And match response.articles[0].title == 'Delete Article'
+        And match response.articles[0].title == articleRequestBody.article.title
 
         Given path 'articles',articleid
         When method Delete
@@ -42,4 +52,4 @@ Feature: Articles
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.articles[0].title != 'Delete Article'
+        And match response.articles[0].title != articleRequestBody.article.title

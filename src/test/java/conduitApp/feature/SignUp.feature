@@ -1,4 +1,4 @@
-@debug
+git reset --soft HEAD~1@debug
 Feature: Cadastrar Novo usuário
 
     Background: Precondicoes
