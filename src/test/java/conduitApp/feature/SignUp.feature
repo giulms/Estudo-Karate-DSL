@@ -10,7 +10,7 @@ Feature: Cadastrar Novo usuário
     Scenario: Cadastrar novo usuario
 
         ####################################################################################
-        # Demonstração de como posso utilizar se o método java não for stastic
+        # Demonstração de como posso utilizar se o metodo java não for stastic
         # * def jsFunction = 
         # """
         #     Function () {

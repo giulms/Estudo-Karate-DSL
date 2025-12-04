@@ -6228,3 +6228,1449 @@ classpath:conduitApp/feature/Articles.feature:21
 11:17:59.880 [main] INFO  com.intuit.karate - Scenario name: Get todas as tags, featureFileName: conduitApp/feature/HomePage.feature, id 2026697318, featureId 1541781971, FINISH <<UPPERCUT>>
 11:17:59.880 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomePage.feature, id: 1541781971, FINISH <<UPPERCUT>>
 11:18:00.577 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomePage.feature
+16:59:47.487 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:59:47.497 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/SignUp.feature, id: 2146777861, START <<UPPERCUT>>
+16:59:47.523 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 10
+16:59:48.793 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:59:48.798 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+16:59:48.825 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 680383648, START <<UPPERCUT>>
+16:59:48.835 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1215925449, featureId 680383648, START <<UPPERCUT>>
+16:59:49.220 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+16:59:50.026 [main] DEBUG com.intuit.karate - response time in milliseconds: 803
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-4I92tCvcYRF8AuQ5AV9BdMTfSZc"
+1 < x-cloud-trace-context: 6208b8fa35cb9c9b7790b91c83c31286;o=1
+1 < date: Wed, 19 Nov 2025 19:59:49 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2MzU4MjM4OSwiZXhwIjoxNzY4NzY2Mzg5fQ.wVy6zIxcbtFw14Dh7tR5aSFJszMATPgGWKDArUNBlCQ"}}
+
+16:59:50.033 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1215925449, featureId 680383648, FINISH <<UPPERCUT>>
+16:59:50.033 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 680383648, FINISH <<UPPERCUT>>
+16:59:50.033 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+16:59:50.038 [main] INFO  com.intuit.karate - Scenario name: Cadastrar novo usuario, featureFileName: conduitApp/feature/SignUp.feature, id 814869659, featureId 2146777861, START <<UPPERCUT>>
+16:59:50.233 [main] INFO  com.intuit.karate - [print] damon53@test.com 
+16:59:50.237 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2MzU4MjM4OSwiZXhwIjoxNzY4NzY2Mzg5fQ.wVy6zIxcbtFw14Dh7tR5aSFJszMATPgGWKDArUNBlCQ
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"damon53@test.com","password":"karate321","username":"grazyna.mosciski"}}
+
+16:59:50.767 [main] DEBUG com.intuit.karate - response time in milliseconds: 529
+1 < 201
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"148-NwKAxXBf5CPFP4frbQsAED7aAZ0"
+1 < x-cloud-trace-context: 438c4490b1bc0baf73b2f4337dfb6743
+1 < date: Wed, 19 Nov 2025 19:59:50 GMT
+1 < server: Google Frontend
+1 < Content-Length: 328
+{"user":{"id":41211,"email":"damon53@test.com","username":"grazyna.mosciski","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0MTIxMX0sImlhdCI6MTc2MzU4MjM5MCwiZXhwIjoxNzY4NzY2MzkwfQ.gkIgHQHjtiT-w7v2YKtBJEezprEwGbRtImKz5kRBBqY"}}
+
+16:59:50.783 [main] INFO  com.intuit.karate - Scenario name: Cadastrar novo usuario, featureFileName: conduitApp/feature/SignUp.feature, id 814869659, featureId 2146777861, FINISH <<UPPERCUT>>
+16:59:50.786 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/SignUp.feature, id: 2146777861, FINISH <<UPPERCUT>>
+16:59:51.476 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/SignUp.feature
+17:53:40.528 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:53:40.560 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763585620552
+17:53:40.570 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2026859948, START <<UPPERCUT>>
+17:53:40.590 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+17:53:41.806 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:53:41.812 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+17:53:41.855 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1083460309, START <<UPPERCUT>>
+17:53:41.866 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 373883281, featureId 1083460309, START <<UPPERCUT>>
+17:53:42.200 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+17:53:42.992 [main] DEBUG com.intuit.karate - response time in milliseconds: 790
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-iUin28kBLLuN5IpU9t0dz3kOt9U"
+1 < x-cloud-trace-context: 9e6b93dbb6437a58875620b221fdd50a;o=1
+1 < date: Wed, 19 Nov 2025 20:53:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2MzU4NTYyMiwiZXhwIjoxNzY4NzY5NjIyfQ.8SHWYO6jWcAJz5XKMXDwenYj5nEHSkVfDnOSXtGCXL4"}}
+
+17:53:43.003 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 373883281, featureId 1083460309, FINISH <<UPPERCUT>>
+17:53:43.004 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1083460309, FINISH <<UPPERCUT>>
+17:53:43.004 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+17:53:43.012 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 80261424, featureId 2026859948, START <<UPPERCUT>>
+17:53:43.017 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 80261424, featureId 2026859948, FINISH <<UPPERCUT>>
+17:53:43.017 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2026859948, FINISH <<UPPERCUT>>
+17:53:44.005 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+18:00:06.237 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:00:06.254 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763586006243
+18:00:06.266 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1597720650, START <<UPPERCUT>>
+18:00:06.294 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+18:00:08.444 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:00:08.452 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+18:00:08.488 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 752512993, START <<UPPERCUT>>
+18:00:08.502 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1281564163, featureId 752512993, START <<UPPERCUT>>
+18:00:08.993 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+18:00:10.881 [main] DEBUG com.intuit.karate - response time in milliseconds: 1885
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-8eZ8y239IQU2PL2hDG0PemKuk5k"
+1 < x-cloud-trace-context: 8f119da88f74be0e52e07c0a3f824a98;o=1
+1 < date: Wed, 19 Nov 2025 21:00:10 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2MzU4NjAxMCwiZXhwIjoxNzY4NzcwMDEwfQ.f19s5wy5D2rnyssK0FD1mrXaXTHb8v7fiJCRmS3cA9A"}}
+
+18:00:10.895 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1281564163, featureId 752512993, FINISH <<UPPERCUT>>
+18:00:10.896 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 752512993, FINISH <<UPPERCUT>>
+18:00:10.896 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+18:00:10.908 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1936899114, featureId 1597720650, START <<UPPERCUT>>
+18:00:10.924 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2MzU4NjAxMCwiZXhwIjoxNzY4NzcwMDEwfQ.f19s5wy5D2rnyssK0FD1mrXaXTHb8v7fiJCRmS3cA9A
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:00:11.866 [main] DEBUG com.intuit.karate - response time in milliseconds: 941
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edf-Qlej/PF2PVl2qjC8lOxrfWp70EM"
+1 < x-cloud-trace-context: 08c691da792ad57dcb0a22a4de0d8ac8
+1 < date: Wed, 19 Nov 2025 21:00:11 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3807
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+18:00:11.870 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1936899114, featureId 1597720650, FINISH <<UPPERCUT>>
+18:00:11.870 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1597720650, FINISH <<UPPERCUT>>
+18:00:12.838 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+10:43:17.082 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:43:17.126 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763991797116
+10:43:17.139 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 581794669, START <<UPPERCUT>>
+10:43:17.176 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+10:43:19.298 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:43:19.304 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+10:43:19.342 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 600969224, START <<UPPERCUT>>
+10:43:19.354 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 6849414, featureId 600969224, START <<UPPERCUT>>
+10:43:19.831 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+10:43:21.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 1776
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-5LOQ8aSdhNljdIGBPz6kEc1ktpU"
+1 < x-cloud-trace-context: fcba7a275bb2c815ee03d6c5065dc2a3;o=1
+1 < date: Mon, 24 Nov 2025 13:43:19 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5MTc5OSwiZXhwIjoxNzY5MTc1Nzk5fQ.MqNkcTcgNG07p0aYnOXXREzQVXUA4LkDF6_4npWtNYc"}}
+
+10:43:21.619 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 6849414, featureId 600969224, FINISH <<UPPERCUT>>
+10:43:21.620 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 600969224, FINISH <<UPPERCUT>>
+10:43:21.620 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+10:43:21.629 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1157331577, featureId 581794669, START <<UPPERCUT>>
+10:43:21.634 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5MTc5OSwiZXhwIjoxNzY5MTc1Nzk5fQ.MqNkcTcgNG07p0aYnOXXREzQVXUA4LkDF6_4npWtNYc
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:43:22.490 [main] DEBUG com.intuit.karate - response time in milliseconds: 854
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edf-Qlej/PF2PVl2qjC8lOxrfWp70EM"
+1 < x-cloud-trace-context: 1321bcc59ccbfaa4a8c7f96873c1f148
+1 < date: Mon, 24 Nov 2025 13:43:20 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3807
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+10:43:22.498 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1157331577, featureId 581794669, FINISH <<UPPERCUT>>
+10:43:22.498 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 581794669, FINISH <<UPPERCUT>>
+10:43:23.382 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:24:24.792 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:24:24.842 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763994264833
+11:24:24.851 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1239257544, START <<UPPERCUT>>
+11:24:24.873 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:24:26.084 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:26.090 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:24:26.144 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1824249586, START <<UPPERCUT>>
+11:24:26.155 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 475706626, featureId 1824249586, START <<UPPERCUT>>
+11:24:26.498 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:24:28.274 [main] DEBUG com.intuit.karate - response time in milliseconds: 1774
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-V1ypD7EgOJeHayclpdNwQSWok6Y"
+1 < x-cloud-trace-context: 4cd2bd0a8f0241fccdaf24a4e446c537
+1 < date: Mon, 24 Nov 2025 14:24:26 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDI2NiwiZXhwIjoxNzY5MTc4MjY2fQ.Gk2FHkosv-LpVQcfSf9dIdlo1UJdFqSfHe0wrzOqfRQ"}}
+
+11:24:28.283 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 475706626, featureId 1824249586, FINISH <<UPPERCUT>>
+11:24:28.283 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1824249586, FINISH <<UPPERCUT>>
+11:24:28.283 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:24:28.290 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 232702802, featureId 1239257544, START <<UPPERCUT>>
+11:24:28.295 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDI2NiwiZXhwIjoxNzY5MTc4MjY2fQ.Gk2FHkosv-LpVQcfSf9dIdlo1UJdFqSfHe0wrzOqfRQ
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:24:29.985 [main] DEBUG com.intuit.karate - response time in milliseconds: 1688
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"ede-ZrNgJ0p12gQPGHcMNeSXGD0xidA"
+1 < x-cloud-trace-context: 6b67e5f2ae4f9242c7c9d54c66608d23
+1 < date: Mon, 24 Nov 2025 14:24:28 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3806
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:24:30.008 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:16
+Given path 'articles',slugID,favorite
+js failed:
+>>>>
+01: ['articles',slugID,favorite]
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "favorite" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomeWork.feature:16
+11:24:30.011 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 232702802, featureId 1239257544, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: ['articles',slugID,favorite]<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: ReferenceError: "favorite" is not defined<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:16 <<UPPERCUT>>
+11:24:30.011 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1239257544, FINISH <<UPPERCUT>>
+11:24:30.980 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:25:43.934 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:25:43.962 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763994343956
+11:25:43.972 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 263133325, START <<UPPERCUT>>
+11:25:43.994 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:25:45.158 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:45.163 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:25:45.200 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 769437228, START <<UPPERCUT>>
+11:25:45.210 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 552519084, featureId 769437228, START <<UPPERCUT>>
+11:25:45.545 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:25:46.306 [main] DEBUG com.intuit.karate - response time in milliseconds: 759
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-clurcnQGP+kn1qlI2DLhcXr6SoQ"
+1 < x-cloud-trace-context: 28aebf263e1c9fcb568266215fa11137
+1 < date: Mon, 24 Nov 2025 14:25:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDM0NCwiZXhwIjoxNzY5MTc4MzQ0fQ.MGtjcRIsz70HgnK82e7_US-CfJImAPNhZfvk066a0hQ"}}
+
+11:25:46.315 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 552519084, featureId 769437228, FINISH <<UPPERCUT>>
+11:25:46.316 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 769437228, FINISH <<UPPERCUT>>
+11:25:46.316 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:25:46.323 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 2030020862, featureId 263133325, START <<UPPERCUT>>
+11:25:46.328 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDM0NCwiZXhwIjoxNzY5MTc4MzQ0fQ.MGtjcRIsz70HgnK82e7_US-CfJImAPNhZfvk066a0hQ
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:25:47.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 1154
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"ede-ZrNgJ0p12gQPGHcMNeSXGD0xidA"
+1 < x-cloud-trace-context: c81a35450fa94f92b0a19ae14d6d46da
+1 < date: Mon, 24 Nov 2025 14:25:45 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3806
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:25:47.512 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:16
+Given path 'articles',slugID/favorite
+js failed:
+>>>>
+01: ['articles',slugID/favorite]
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "favorite" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:conduitApp/feature/HomeWork.feature:16
+11:25:47.515 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 2030020862, featureId 263133325, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: ['articles',slugID/favorite]<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: ReferenceError: "favorite" is not defined<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:16 <<UPPERCUT>>
+11:25:47.515 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 263133325, FINISH <<UPPERCUT>>
+11:25:48.224 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:26:43.770 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:26:43.782 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1445038434, START <<UPPERCUT>>
+11:26:43.810 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:26:45.411 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:45.418 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:26:45.444 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 39605063, START <<UPPERCUT>>
+11:26:45.457 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1333010532, featureId 39605063, START <<UPPERCUT>>
+11:26:45.819 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:26:46.789 [main] DEBUG com.intuit.karate - response time in milliseconds: 966
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-fVHOvWQjOlg5qIfrvMMDbHDe1NI"
+1 < x-cloud-trace-context: 08f053fd06a6151387d9f901416f75c7;o=1
+1 < date: Mon, 24 Nov 2025 14:26:44 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDQwNCwiZXhwIjoxNzY5MTc4NDA0fQ.FM9_qpmKGQ9t4jbG_FU3m01AvdM2yMi3YAlCkE_GiEE"}}
+
+11:26:46.807 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1333010532, featureId 39605063, FINISH <<UPPERCUT>>
+11:26:46.808 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 39605063, FINISH <<UPPERCUT>>
+11:26:46.809 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:26:46.814 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 528592653, featureId 1445038434, START <<UPPERCUT>>
+11:26:46.819 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDQwNCwiZXhwIjoxNzY5MTc4NDA0fQ.FM9_qpmKGQ9t4jbG_FU3m01AvdM2yMi3YAlCkE_GiEE
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:26:47.952 [main] DEBUG com.intuit.karate - response time in milliseconds: 1131
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"ede-ZrNgJ0p12gQPGHcMNeSXGD0xidA"
+1 < x-cloud-trace-context: d340a7d89d3adb01ebe9f38a0c98e487
+1 < date: Mon, 24 Nov 2025 14:26:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3806
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:26:47.981 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDQwNCwiZXhwIjoxNzY5MTc4NDA0fQ.FM9_qpmKGQ9t4jbG_FU3m01AvdM2yMi3YAlCkE_GiEE
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:26:48.596 [main] DEBUG com.intuit.karate - response time in milliseconds: 615
+2 < 411
+2 < Content-Type: text/html; charset=UTF-8
+2 < Referrer-Policy: no-referrer
+2 < Content-Length: 1564
+2 < Date: Mon, 24 Nov 2025 14:26:46 GMT
+2 < X-Google-GFE-Backend-Request-Cost: 49.0964698432655
+2 < X-Google-GFE-Load-Report: utilization_percent: 49.09647 queries_per_second: 18801 errors_per_second: 0
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+
+11:26:48.612 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:18
+Then status 200
+status code was: 411, expected: 200, response time in milliseconds: 615, url: https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite, response: 
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+classpath:conduitApp/feature/HomeWork.feature:18
+11:26:48.619 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 528592653, featureId 1445038434, status code was: 411, expected: 200, response time in milliseconds: 615, url: https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite, response: <<NEWLINE>><!DOCTYPE html><<NEWLINE>><html lang=en><<NEWLINE>>  <meta charset=utf-8><<NEWLINE>>  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width"><<NEWLINE>>  <title>Error 411 (Length Required)!!1</title><<NEWLINE>>  <style><<NEWLINE>>    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}<<NEWLINE>>  </style><<NEWLINE>>  <a href=//www.google.com/><span id=logo aria-label=Google></span></a><<NEWLINE>>  <p><b>411.</b> <ins>That’s an error.</ins><<NEWLINE>>  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins><<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:18 <<UPPERCUT>>
+11:26:48.620 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1445038434, FINISH <<UPPERCUT>>
+11:26:49.496 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:31:23.988 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:31:23.999 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763994683991
+11:31:24.009 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1778216533, START <<UPPERCUT>>
+11:31:24.028 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:31:25.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:31:25.132 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:31:25.153 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 647548274, START <<UPPERCUT>>
+11:31:25.162 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 502674808, featureId 647548274, START <<UPPERCUT>>
+11:31:25.472 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:31:26.380 [main] DEBUG com.intuit.karate - response time in milliseconds: 905
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-d2yP2W3S3gLDh2dmydDS0wCb1hY"
+1 < x-cloud-trace-context: 10b6093bbd610c049ae5e17a98a5c630;o=1
+1 < date: Mon, 24 Nov 2025 14:31:24 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDY4NCwiZXhwIjoxNzY5MTc4Njg0fQ.IFlXqr7znHcpx6zzIcsu6Ch1ZtbCplcy7AcIcwwoJmA"}}
+
+11:31:26.388 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 502674808, featureId 647548274, FINISH <<UPPERCUT>>
+11:31:26.388 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 647548274, FINISH <<UPPERCUT>>
+11:31:26.388 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:31:26.393 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1709197442, featureId 1778216533, START <<UPPERCUT>>
+11:31:26.401 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDY4NCwiZXhwIjoxNzY5MTc4Njg0fQ.IFlXqr7znHcpx6zzIcsu6Ch1ZtbCplcy7AcIcwwoJmA
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:31:27.533 [main] DEBUG com.intuit.karate - response time in milliseconds: 1130
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"ede-ZrNgJ0p12gQPGHcMNeSXGD0xidA"
+1 < x-cloud-trace-context: 578c0c9d9fd84af8913ee17af4c1d31d
+1 < date: Mon, 24 Nov 2025 14:31:25 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3806
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:31:27.548 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDY4NCwiZXhwIjoxNzY5MTc4Njg0fQ.IFlXqr7znHcpx6zzIcsu6Ch1ZtbCplcy7AcIcwwoJmA
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:31:28.188 [main] DEBUG com.intuit.karate - response time in milliseconds: 640
+2 < 411
+2 < Content-Type: text/html; charset=UTF-8
+2 < Referrer-Policy: no-referrer
+2 < Content-Length: 1564
+2 < Date: Mon, 24 Nov 2025 14:31:26 GMT
+2 < X-Google-GFE-Backend-Request-Cost: 51.090017199527047
+2 < X-Google-GFE-Load-Report: utilization_percent: 51.090015 queries_per_second: 24179 errors_per_second: 1
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+
+11:31:28.201 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:19
+Then status 200
+status code was: 411, expected: 200, response time in milliseconds: 640, url: https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite, response: 
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 411 (Length Required)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>411.</b> <ins>That’s an error.</ins>
+  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins>
+
+classpath:conduitApp/feature/HomeWork.feature:19
+11:31:28.205 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1709197442, featureId 1778216533, status code was: 411, expected: 200, response time in milliseconds: 640, url: https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite, response: <<NEWLINE>><!DOCTYPE html><<NEWLINE>><html lang=en><<NEWLINE>>  <meta charset=utf-8><<NEWLINE>>  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width"><<NEWLINE>>  <title>Error 411 (Length Required)!!1</title><<NEWLINE>>  <style><<NEWLINE>>    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}<<NEWLINE>>  </style><<NEWLINE>>  <a href=//www.google.com/><span id=logo aria-label=Google></span></a><<NEWLINE>>  <p><b>411.</b> <ins>That’s an error.</ins><<NEWLINE>>  <p>POST requests require a <code>Content-length</code> header.  <ins>That’s all we know.</ins><<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:19 <<UPPERCUT>>
+11:31:28.205 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1778216533, FINISH <<UPPERCUT>>
+11:31:28.810 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:35:15.611 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:35:15.622 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763994915614
+11:35:15.633 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1627980989, START <<UPPERCUT>>
+11:35:15.650 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:35:16.759 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:35:16.764 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:35:16.787 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 2083335648, START <<UPPERCUT>>
+11:35:16.798 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 742898294, featureId 2083335648, START <<UPPERCUT>>
+11:35:17.103 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:35:18.162 [main] DEBUG com.intuit.karate - response time in milliseconds: 1057
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-HFkep0FvqcIOG+mdUepJEqKPQuA"
+1 < x-cloud-trace-context: b6f7b4fa32c6e26cd5502304850b8393;o=1
+1 < date: Mon, 24 Nov 2025 14:35:16 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDkxNiwiZXhwIjoxNzY5MTc4OTE2fQ.q5wbXkxUqzMtImGMmLuCcoeTTmqNwerjfDA-ZLjqUi8"}}
+
+11:35:18.168 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 742898294, featureId 2083335648, FINISH <<UPPERCUT>>
+11:35:18.169 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 2083335648, FINISH <<UPPERCUT>>
+11:35:18.169 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:35:18.174 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1018924395, featureId 1627980989, START <<UPPERCUT>>
+11:35:18.178 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDkxNiwiZXhwIjoxNzY5MTc4OTE2fQ.q5wbXkxUqzMtImGMmLuCcoeTTmqNwerjfDA-ZLjqUi8
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:35:19.053 [main] DEBUG com.intuit.karate - response time in milliseconds: 873
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"ede-ZrNgJ0p12gQPGHcMNeSXGD0xidA"
+1 < x-cloud-trace-context: 329b1c6bec196047041f7e093bd966a2
+1 < date: Mon, 24 Nov 2025 14:35:17 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3806
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:35:19.072 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NDkxNiwiZXhwIjoxNzY5MTc4OTE2fQ.q5wbXkxUqzMtImGMmLuCcoeTTmqNwerjfDA-ZLjqUi8
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+11:35:19.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 690
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: 2d4134ee412f9e7f45e4c8894413781f
+2 < date: Mon, 24 Nov 2025 14:35:17 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+11:35:19.785 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:20
+And match response..slug == slugID
+match failed: EQUALS
+  $ | data types don't match (LIST:STRING)
+  ["Harmune-38657"]
+  'Harmune-38657'
+
+classpath:conduitApp/feature/HomeWork.feature:20
+11:35:19.788 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1018924395, featureId 1627980989, match failed: EQUALS<<NEWLINE>>  $ | data types don't match (LIST:STRING)<<NEWLINE>>  ["Harmune-38657"]<<NEWLINE>>  'Harmune-38657'<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:20 <<UPPERCUT>>
+11:35:19.788 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1627980989, FINISH <<UPPERCUT>>
+11:35:20.375 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:37:41.759 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:37:41.770 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763995061762
+11:37:41.781 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2028971666, START <<UPPERCUT>>
+11:37:41.799 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+11:37:42.996 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:37:43.000 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+11:37:43.024 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 390137665, START <<UPPERCUT>>
+11:37:43.034 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1031026782, featureId 390137665, START <<UPPERCUT>>
+11:37:43.384 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+11:37:44.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 977
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-lGhqy82V6JA8SqA9T3lWMJPCW+o"
+1 < x-cloud-trace-context: c70932a7415e7f5459229f287acaf346
+1 < date: Mon, 24 Nov 2025 14:37:42 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NTA2MiwiZXhwIjoxNzY5MTc5MDYyfQ.LsdkjsI5QU9T0eoxjJXSFWdqlskbm2NgfKeRYENuL3M"}}
+
+11:37:44.374 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1031026782, featureId 390137665, FINISH <<UPPERCUT>>
+11:37:44.374 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 390137665, FINISH <<UPPERCUT>>
+11:37:44.375 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+11:37:44.383 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1180051478, featureId 2028971666, START <<UPPERCUT>>
+11:37:44.390 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NTA2MiwiZXhwIjoxNzY5MTc5MDYyfQ.LsdkjsI5QU9T0eoxjJXSFWdqlskbm2NgfKeRYENuL3M
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:37:45.218 [main] DEBUG com.intuit.karate - response time in milliseconds: 827
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+1 < x-cloud-trace-context: b7be5393977245df0aaceecec1b77103
+1 < date: Mon, 24 Nov 2025 14:37:43 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+11:37:45.236 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NTA2MiwiZXhwIjoxNzY5MTc5MDYyfQ.LsdkjsI5QU9T0eoxjJXSFWdqlskbm2NgfKeRYENuL3M
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+11:37:45.855 [main] DEBUG com.intuit.karate - response time in milliseconds: 618
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: daec6f616f54faef54adca952d7b0eb0
+2 < date: Mon, 24 Nov 2025 14:37:44 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+11:37:45.874 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 1180051478, featureId 2028971666, FINISH <<UPPERCUT>>
+11:37:45.874 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2028971666, FINISH <<UPPERCUT>>
+11:37:46.491 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+11:58:02.119 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: conduitApp/feature/HomeWork.feature - mismatched input ''' expecting <EOF>
+11:58:50.821 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: conduitApp/feature/HomeWork.feature - mismatched input ''' expecting <EOF>
+12:00:34.539 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:00:34.580 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763996434574
+12:00:34.593 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1111130145, START <<UPPERCUT>>
+12:00:34.611 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+12:00:35.762 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:00:35.770 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:00:35.801 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1963266522, START <<UPPERCUT>>
+12:00:35.808 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 286778197, featureId 1963266522, START <<UPPERCUT>>
+12:00:36.125 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+12:00:37.927 [main] DEBUG com.intuit.karate - response time in milliseconds: 1800
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-KQA5U+hbOeqmIHNznvHRccpjUF8"
+1 < x-cloud-trace-context: 67cd08c67083e035499152aa214eb9da
+1 < date: Mon, 24 Nov 2025 15:00:36 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NjQzNiwiZXhwIjoxNzY5MTgwNDM2fQ.-d02UE34riNYp9CEKpoyYAz5vi9OV8pdcFttlJ0g8Yg"}}
+
+12:00:37.935 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 286778197, featureId 1963266522, FINISH <<UPPERCUT>>
+12:00:37.935 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1963266522, FINISH <<UPPERCUT>>
+12:00:37.935 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:00:37.941 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 269994433, featureId 1111130145, START <<UPPERCUT>>
+12:00:37.987 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NjQzNiwiZXhwIjoxNzY5MTgwNDM2fQ.-d02UE34riNYp9CEKpoyYAz5vi9OV8pdcFttlJ0g8Yg
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:00:38.899 [main] DEBUG com.intuit.karate - response time in milliseconds: 912
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+1 < x-cloud-trace-context: e983b2a19dc3e99f4004aad9d10945c0
+1 < date: Mon, 24 Nov 2025 15:00:37 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:00:38.918 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NjQzNiwiZXhwIjoxNzY5MTgwNDM2fQ.-d02UE34riNYp9CEKpoyYAz5vi9OV8pdcFttlJ0g8Yg
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+12:00:39.658 [main] DEBUG com.intuit.karate - response time in milliseconds: 739
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: 67e9c395f3fcf92bcf0bfc16924166f1;o=1
+2 < date: Mon, 24 Nov 2025 15:00:37 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+12:00:39.677 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5NjQzNiwiZXhwIjoxNzY5MTgwNDM2fQ.-d02UE34riNYp9CEKpoyYAz5vi9OV8pdcFttlJ0g8Yg
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+3 > Accept-Encoding: gzip,deflate
+
+
+12:00:40.632 [main] DEBUG com.intuit.karate - response time in milliseconds: 953
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+3 < x-cloud-trace-context: c8e20bf15b214510751cb60224199abd
+3 < date: Mon, 24 Nov 2025 15:00:38 GMT
+3 < server: Google Frontend
+3 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:00:40.679 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:51
+And match response.articles[*].slug == slugID
+match failed: EQUALS
+  $ | data types don't match (LIST:STRING)
+  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]
+  'Harmune-38657'
+
+classpath:conduitApp/feature/HomeWork.feature:51
+12:00:40.682 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 269994433, featureId 1111130145, match failed: EQUALS<<NEWLINE>>  $ | data types don't match (LIST:STRING)<<NEWLINE>>  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]<<NEWLINE>>  'Harmune-38657'<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:51 <<UPPERCUT>>
+12:00:40.683 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1111130145, FINISH <<UPPERCUT>>
+12:00:41.313 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+12:05:45.195 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:05:45.206 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1763996745199
+12:05:45.216 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1847867948, START <<UPPERCUT>>
+12:05:45.236 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+12:05:46.364 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:05:46.369 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:05:46.388 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1656297663, START <<UPPERCUT>>
+12:05:46.397 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 2008821704, featureId 1656297663, START <<UPPERCUT>>
+12:05:46.694 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+12:05:48.398 [main] DEBUG com.intuit.karate - response time in milliseconds: 1699
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-HC2jMf50sgqaYtUOSSeM/XUUQdg"
+1 < x-cloud-trace-context: 892174daf0eea456e3af16ab97ec30a3
+1 < date: Mon, 24 Nov 2025 15:05:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5Njc0NiwiZXhwIjoxNzY5MTgwNzQ2fQ.HaZ-D8Z2xC-OhZ3bVgx6U7yHQqP96eSplXJDX-rLdUY"}}
+
+12:05:48.413 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 2008821704, featureId 1656297663, FINISH <<UPPERCUT>>
+12:05:48.414 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1656297663, FINISH <<UPPERCUT>>
+12:05:48.415 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:05:48.430 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 90877262, featureId 1847867948, START <<UPPERCUT>>
+12:05:48.460 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5Njc0NiwiZXhwIjoxNzY5MTgwNzQ2fQ.HaZ-D8Z2xC-OhZ3bVgx6U7yHQqP96eSplXJDX-rLdUY
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:05:49.331 [main] DEBUG com.intuit.karate - response time in milliseconds: 870
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+1 < x-cloud-trace-context: 12857c3acc9959d5b12f4e52d59984ca
+1 < date: Mon, 24 Nov 2025 15:05:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:05:49.353 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5Njc0NiwiZXhwIjoxNzY5MTgwNzQ2fQ.HaZ-D8Z2xC-OhZ3bVgx6U7yHQqP96eSplXJDX-rLdUY
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+12:05:50.103 [main] DEBUG com.intuit.karate - response time in milliseconds: 748
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: 5fa8968bc4bc369bda1c5569e48e100a
+2 < date: Mon, 24 Nov 2025 15:05:48 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+12:05:50.132 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2Mzk5Njc0NiwiZXhwIjoxNzY5MTgwNzQ2fQ.HaZ-D8Z2xC-OhZ3bVgx6U7yHQqP96eSplXJDX-rLdUY
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+3 > Accept-Encoding: gzip,deflate
+
+
+12:05:50.981 [main] DEBUG com.intuit.karate - response time in milliseconds: 847
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+3 < x-cloud-trace-context: 9383dafe0a04b1a986b47b0727345047;o=1
+3 < date: Mon, 24 Nov 2025 15:05:49 GMT
+3 < server: Google Frontend
+3 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+12:05:51.020 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:51
+And match each response.articles[*].slug == slugID
+match failed: EACH_EQUALS
+  $ | match each failed at index 1 (LIST:STRING)
+  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]
+  'Harmune-38657'
+
+    $[1] | not equal (STRING:STRING)
+    'Lester-38657'
+    'Harmune-38657'
+
+classpath:conduitApp/feature/HomeWork.feature:51
+12:05:51.022 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 90877262, featureId 1847867948, match failed: EACH_EQUALS<<NEWLINE>>  $ | match each failed at index 1 (LIST:STRING)<<NEWLINE>>  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]<<NEWLINE>>  'Harmune-38657'<<NEWLINE>><<NEWLINE>>    $[1] | not equal (STRING:STRING)<<NEWLINE>>    'Lester-38657'<<NEWLINE>>    'Harmune-38657'<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:51 <<UPPERCUT>>
+12:05:51.022 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1847867948, FINISH <<UPPERCUT>>
+12:05:51.771 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+16:03:44.088 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:03:44.124 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764011024117
+16:03:44.134 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2106362231, START <<UPPERCUT>>
+16:03:44.161 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+16:03:45.545 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:03:45.551 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+16:03:45.587 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1486358889, START <<UPPERCUT>>
+16:03:45.597 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1755834220, featureId 1486358889, START <<UPPERCUT>>
+16:03:45.977 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+16:03:47.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 1915
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-GdD6zm4nC72kWb+liQ7FkanhRfg"
+1 < x-cloud-trace-context: b92a66be0a3e3f2a83748119f996c5b7;o=1
+1 < date: Mon, 24 Nov 2025 19:03:46 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTAyNiwiZXhwIjoxNzY5MTk1MDI2fQ.C10ZXhbeTyD22xeg66ALeYrABI3DthBUxXWKDw_AVBY"}}
+
+16:03:47.903 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 1755834220, featureId 1486358889, FINISH <<UPPERCUT>>
+16:03:47.903 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1486358889, FINISH <<UPPERCUT>>
+16:03:47.903 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+16:03:47.912 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 706708485, featureId 2106362231, START <<UPPERCUT>>
+16:03:47.956 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTAyNiwiZXhwIjoxNzY5MTk1MDI2fQ.C10ZXhbeTyD22xeg66ALeYrABI3DthBUxXWKDw_AVBY
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:03:49.085 [main] DEBUG com.intuit.karate - response time in milliseconds: 1129
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+1 < x-cloud-trace-context: d5e5b109fc2fec7691c4133f1684e73b
+1 < date: Mon, 24 Nov 2025 19:03:47 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+16:03:49.103 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTAyNiwiZXhwIjoxNzY5MTk1MDI2fQ.C10ZXhbeTyD22xeg66ALeYrABI3DthBUxXWKDw_AVBY
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+16:03:49.949 [main] DEBUG com.intuit.karate - response time in milliseconds: 845
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: 3958db573c6e92e0cccb18bb5dc1f41f
+2 < date: Mon, 24 Nov 2025 19:03:48 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+16:03:49.973 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTAyNiwiZXhwIjoxNzY5MTk1MDI2fQ.C10ZXhbeTyD22xeg66ALeYrABI3DthBUxXWKDw_AVBY
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+3 > Accept-Encoding: gzip,deflate
+
+
+16:03:50.954 [main] DEBUG com.intuit.karate - response time in milliseconds: 979
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+3 < x-cloud-trace-context: f6c1864d15c1774028036c87f8ddb06f
+3 < date: Mon, 24 Nov 2025 19:03:49 GMT
+3 < server: Google Frontend
+3 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+16:03:50.988 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/HomeWork.feature:51
+And match each response.articles[*].slug contains slugID
+match failed: EACH_CONTAINS
+  $ | match each failed at index 1 (LIST:STRING)
+  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]
+  'Harmune-38657'
+
+    $[1] | actual does not contain expected (STRING:STRING)
+    'Lester-38657'
+    'Harmune-38657'
+
+classpath:conduitApp/feature/HomeWork.feature:51
+16:03:50.991 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 706708485, featureId 2106362231, match failed: EACH_CONTAINS<<NEWLINE>>  $ | match each failed at index 1 (LIST:STRING)<<NEWLINE>>  ["Harmune-38657","Lester-38657","Teste-com-Karate-27-38657","Teste-com-Karate-22-38657","Teste-com-Karate-5-38657","Teste-com-Postman-7-38657","Teste-com-Karate-4-38657","Teste-com-Karate-2-38657","Teste-com-Karate-38657","Teste-com-Postman-38657"]<<NEWLINE>>  'Harmune-38657'<<NEWLINE>><<NEWLINE>>    $[1] | actual does not contain expected (STRING:STRING)<<NEWLINE>>    'Lester-38657'<<NEWLINE>>    'Harmune-38657'<<NEWLINE>><<NEWLINE>>classpath:conduitApp/feature/HomeWork.feature:51 <<UPPERCUT>>
+16:03:50.991 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 2106362231, FINISH <<UPPERCUT>>
+16:03:51.696 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+16:06:12.175 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:06:12.185 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764011172178
+16:06:12.197 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1963396171, START <<UPPERCUT>>
+16:06:12.215 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 7
+16:06:13.348 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:06:13.354 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+16:06:13.375 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1321952, START <<UPPERCUT>>
+16:06:13.381 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 511892526, featureId 1321952, START <<UPPERCUT>>
+16:06:13.698 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+16:06:14.663 [main] DEBUG com.intuit.karate - response time in milliseconds: 962
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-mxIclI1sjaZC/h/d5CGgq9NBNkI"
+1 < x-cloud-trace-context: daf6bb0f27e8b4d2d8896ee6159408f1;o=1
+1 < date: Mon, 24 Nov 2025 19:06:12 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTE3MiwiZXhwIjoxNzY5MTk1MTcyfQ.y-N1XvCMBrgc-duzHTDzFlqwhkn4QTz4Kz2i-MboKr8"}}
+
+16:06:14.671 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 511892526, featureId 1321952, FINISH <<UPPERCUT>>
+16:06:14.671 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1321952, FINISH <<UPPERCUT>>
+16:06:14.671 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+16:06:14.678 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 568057623, featureId 1963396171, START <<UPPERCUT>>
+16:06:14.704 [main] DEBUG com.intuit.karate - request:
+1 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTE3MiwiZXhwIjoxNzY5MTk1MTcyfQ.y-N1XvCMBrgc-duzHTDzFlqwhkn4QTz4Kz2i-MboKr8
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:06:15.739 [main] DEBUG com.intuit.karate - response time in milliseconds: 1035
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+1 < x-cloud-trace-context: f6e718d04ffed8e6c6386a066e6b88db
+1 < date: Mon, 24 Nov 2025 19:06:14 GMT
+1 < server: Google Frontend
+1 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+16:06:15.755 [main] DEBUG com.intuit.karate - request:
+2 > POST https://conduit-api.bondaracademy.com/api/articles/Harmune-38657/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTE3MiwiZXhwIjoxNzY5MTk1MTcyfQ.y-N1XvCMBrgc-duzHTDzFlqwhkn4QTz4Kz2i-MboKr8
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: conduit-api.bondaracademy.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+16:06:16.557 [main] DEBUG com.intuit.karate - response time in milliseconds: 801
+2 < 200
+2 < x-powered-by: Express
+2 < vary: Origin
+2 < content-type: application/json; charset=utf-8
+2 < etag: W/"2a4-E2VQNL5d35sBqlmnOF7FqdLRGOg"
+2 < x-cloud-trace-context: 296b652af14bc62ab4ae97ed62ea9589
+2 < date: Mon, 24 Nov 2025 19:06:14 GMT
+2 < server: Google Frontend
+2 < Content-Length: 676
+{"article":{"id":283972,"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","authorId":38657,"tagList":[],"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false},"favoritedBy":[{"id":38657,"email":"karatezada@gmail.com","username":"Karate112025","password":"$2a$10$4Zv.Ih8AtRWqPIzjMSsJBuEMgDlKm6kISHNGn4sEB1OsNuuJUrvmi","image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","bio":null,"demo":false}],"favorited":true,"favoritesCount":1}}
+
+16:06:16.574 [main] DEBUG com.intuit.karate - request:
+3 > GET https://conduit-api.bondaracademy.com/api/articles?limit=10&offset=0
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxMTE3MiwiZXhwIjoxNzY5MTk1MTcyfQ.y-N1XvCMBrgc-duzHTDzFlqwhkn4QTz4Kz2i-MboKr8
+3 > Host: conduit-api.bondaracademy.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+3 > Accept-Encoding: gzip,deflate
+
+
+16:06:17.507 [main] DEBUG com.intuit.karate - response time in milliseconds: 932
+3 < 200
+3 < x-powered-by: Express
+3 < vary: Origin
+3 < content-type: application/json; charset=utf-8
+3 < etag: W/"edd-pNyd9qdZwuxkhkMlGN1+42nkVhM"
+3 < x-cloud-trace-context: c6a9f34dd8499fea5dfe9a8b5dce14b6
+3 < date: Mon, 24 Nov 2025 19:06:15 GMT
+3 < server: Google Frontend
+3 < Content-Length: 3805
+{"articles":[{"slug":"Harmune-38657","title":"Harmune","description":"King's Landing","body":"Fear cuts deeper than swords.","tagList":[],"createdAt":"2025-11-19T19:29:01.809Z","updatedAt":"2025-11-19T19:29:01.809Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Lester-38657","title":"Lester","description":"Chroyane","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2025-11-19T19:28:27.396Z","updatedAt":"2025-11-19T19:28:27.396Z","favorited":true,"favoritesCount":1,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-27-38657","title":"Teste com Karate 27","description":"payload importado da pasta json","body":"body","tagList":[],"createdAt":"2025-11-19T18:18:37.889Z","updatedAt":"2025-11-19T18:18:37.889Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-22-38657","title":"Teste com Karate 22","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:23:05.563Z","updatedAt":"2025-11-14T19:23:05.563Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-5-38657","title":"Teste com Karate 5","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-14T19:20:42.904Z","updatedAt":"2025-11-14T19:20:42.904Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-7-38657","title":"Teste com Postman 7","description":"teste teste 7","body":"body","tagList":[],"createdAt":"2025-11-13T20:31:29.298Z","updatedAt":"2025-11-13T20:31:29.298Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-4-38657","title":"Teste com Karate 4","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T18:28:55.430Z","updatedAt":"2025-11-13T18:28:55.430Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-2-38657","title":"Teste com Karate 2","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:40:33.819Z","updatedAt":"2025-11-13T17:40:33.819Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Karate-38657","title":"Teste com Karate","description":"teste karate","body":"body","tagList":[],"createdAt":"2025-11-13T17:33:16.906Z","updatedAt":"2025-11-13T17:33:16.906Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}},{"slug":"Teste-com-Postman-38657","title":"Teste com Postman","description":"teste teste","body":"body","tagList":[],"createdAt":"2025-11-13T17:17:50.152Z","updatedAt":"2025-11-13T17:17:50.152Z","favorited":false,"favoritesCount":0,"author":{"username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":21}
+
+16:06:17.538 [main] INFO  com.intuit.karate - Scenario name: Favoritar Artigo, featureFileName: conduitApp/feature/HomeWork.feature, id 568057623, featureId 1963396171, FINISH <<UPPERCUT>>
+16:06:17.538 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/HomeWork.feature, id: 1963396171, FINISH <<UPPERCUT>>
+16:06:18.170 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/HomeWork.feature
+17:48:18.636 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:48:18.694 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764017298683
+17:48:18.704 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 1696340789, START <<UPPERCUT>>
+17:48:20.112 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:20.119 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+17:48:20.159 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 224063627, START <<UPPERCUT>>
+17:48:20.168 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 836066511, featureId 224063627, START <<UPPERCUT>>
+17:48:20.604 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+17:48:22.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 2023
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-2jPj6PhDIYUoXWZTjA/lsTYarX8"
+1 < x-cloud-trace-context: ed1b63429f76fa635885eecaa45a0039;o=1
+1 < date: Mon, 24 Nov 2025 20:48:21 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDAxNzMwMSwiZXhwIjoxNzY5MjAxMzAxfQ.oh8WNWlTuoLAndb6r4R5gIo0zER-9qW4iKW2LF4FWLU"}}
+
+17:48:22.641 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 836066511, featureId 224063627, FINISH <<UPPERCUT>>
+17:48:22.643 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 224063627, FINISH <<UPPERCUT>>
+17:48:22.643 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+17:48:22.649 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 444060110, featureId 1696340789, START <<UPPERCUT>>
+17:48:22.669 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1793682642, START <<UPPERCUT>>
+17:48:22.674 [main] INFO  com.intuit.karate - Scenario name: 444060110##Dummy, featureFileName: helpers/Dummy.feature, id 431342589, featureId 1793682642, START <<UPPERCUT>>
+17:48:22.700 [main] ERROR com.intuit.karate - classpath:helpers/Dummy.feature:6
+* def username = dataGenerator.getRandomUsername()
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+17:48:22.704 [main] INFO  com.intuit.karate - Scenario name: 444060110##Dummy, featureFileName: helpers/Dummy.feature, id 431342589, featureId 1793682642, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6 <<UPPERCUT>>
+17:48:22.704 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1793682642, FINISH <<UPPERCUT>>
+17:48:22.704 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Hooks.feature:5
+* def result = call read('classpath:helpers/Dummy.feature')
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+classpath:conduitApp/feature/Hooks.feature:5
+17:48:22.705 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 444060110, featureId 1696340789, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6<<NEWLINE>>classpath:conduitApp/feature/Hooks.feature:5 <<UPPERCUT>>
+17:48:22.711 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:22.712 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 504100192, featureId 1696340789, START <<UPPERCUT>>
+17:48:22.715 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1993440495, START <<UPPERCUT>>
+17:48:22.718 [main] INFO  com.intuit.karate - Scenario name: 504100192##Dummy, featureFileName: helpers/Dummy.feature, id 969219041, featureId 1993440495, START <<UPPERCUT>>
+17:48:22.721 [main] ERROR com.intuit.karate - classpath:helpers/Dummy.feature:6
+* def username = dataGenerator.getRandomUsername()
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+17:48:22.722 [main] INFO  com.intuit.karate - Scenario name: 504100192##Dummy, featureFileName: helpers/Dummy.feature, id 969219041, featureId 1993440495, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6 <<UPPERCUT>>
+17:48:22.722 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1993440495, FINISH <<UPPERCUT>>
+17:48:22.722 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Hooks.feature:5
+* def result = call read('classpath:helpers/Dummy.feature')
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+classpath:conduitApp/feature/Hooks.feature:5
+17:48:22.722 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 504100192, featureId 1696340789, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6<<NEWLINE>>classpath:conduitApp/feature/Hooks.feature:5 <<UPPERCUT>>
+17:48:22.722 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 1696340789, FINISH <<UPPERCUT>>
+17:48:23.585 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/Hooks.feature
+10:10:07.226 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:10:07.241 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764853807232
+10:10:07.253 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 1411118598, START <<UPPERCUT>>
+10:10:09.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:10:09.134 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+10:10:09.163 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1508948625, START <<UPPERCUT>>
+10:10:09.173 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 353775565, featureId 1508948625, START <<UPPERCUT>>
+10:10:09.663 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+10:10:11.225 [main] DEBUG com.intuit.karate - response time in milliseconds: 1557
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-Onnp73W67X1sYU/UYtmJWn+w8Iw"
+1 < x-cloud-trace-context: 41c2985191b9863edc052da16a76c9a6
+1 < date: Thu, 04 Dec 2025 13:10:10 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDg1MzgxMCwiZXhwIjoxNzcwMDM3ODEwfQ.s5NhsQLIHdl1uwLc_dt2UyPuLCB04lAVW_8qhEjIFEs"}}
+
+10:10:11.237 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 353775565, featureId 1508948625, FINISH <<UPPERCUT>>
+10:10:11.238 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 1508948625, FINISH <<UPPERCUT>>
+10:10:11.238 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+10:10:11.246 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 332993896, featureId 1411118598, START <<UPPERCUT>>
+10:10:11.260 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1165710397, START <<UPPERCUT>>
+10:10:11.265 [main] INFO  com.intuit.karate - Scenario name: 332993896##Dummy, featureFileName: helpers/Dummy.feature, id 1585918466, featureId 1165710397, START <<UPPERCUT>>
+10:10:11.294 [main] ERROR com.intuit.karate - classpath:helpers/Dummy.feature:6
+* def username = dataGenerator.getRandomUsername()
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+10:10:11.297 [main] INFO  com.intuit.karate - Scenario name: 332993896##Dummy, featureFileName: helpers/Dummy.feature, id 1585918466, featureId 1165710397, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6 <<UPPERCUT>>
+10:10:11.300 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1165710397, FINISH <<UPPERCUT>>
+10:10:11.300 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Hooks.feature:5
+* def result = call read('classpath:helpers/Dummy.feature')
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+classpath:conduitApp/feature/Hooks.feature:5
+10:10:11.301 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 332993896, featureId 1411118598, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6<<NEWLINE>>classpath:conduitApp/feature/Hooks.feature:5 <<UPPERCUT>>
+10:10:11.309 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:10:11.311 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 654377874, featureId 1411118598, START <<UPPERCUT>>
+10:10:11.314 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 448005341, START <<UPPERCUT>>
+10:10:11.319 [main] INFO  com.intuit.karate - Scenario name: 654377874##Dummy, featureFileName: helpers/Dummy.feature, id 1845120371, featureId 448005341, START <<UPPERCUT>>
+10:10:11.321 [main] ERROR com.intuit.karate - classpath:helpers/Dummy.feature:6
+* def username = dataGenerator.getRandomUsername()
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+10:10:11.322 [main] INFO  com.intuit.karate - Scenario name: 654377874##Dummy, featureFileName: helpers/Dummy.feature, id 1845120371, featureId 448005341, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6 <<UPPERCUT>>
+10:10:11.322 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 448005341, FINISH <<UPPERCUT>>
+10:10:11.323 [main] ERROR com.intuit.karate - classpath:conduitApp/feature/Hooks.feature:5
+* def result = call read('classpath:helpers/Dummy.feature')
+js failed:
+>>>>
+01: dataGenerator.getRandomUsername()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername
+- <js>.:program(Unnamed:1)
+
+classpath:helpers/Dummy.feature:6
+classpath:conduitApp/feature/Hooks.feature:5
+10:10:11.323 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 654377874, featureId 1411118598, js failed:<<NEWLINE>>>>>><<NEWLINE>>01: dataGenerator.getRandomUsername()<<NEWLINE>><<<<<<NEWLINE>>org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (getRandomUsername) on helpers.DataGenerator failed due to: Unknown identifier: getRandomUsername<<NEWLINE>>- <js>.:program(Unnamed:1)<<NEWLINE>><<NEWLINE>>classpath:helpers/Dummy.feature:6<<NEWLINE>>classpath:conduitApp/feature/Hooks.feature:5 <<UPPERCUT>>
+10:10:11.323 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 1411118598, FINISH <<UPPERCUT>>
+10:10:12.207 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/Hooks.feature
+10:12:56.727 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:12:56.772 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764853976763
+10:12:56.784 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 724049644, START <<UPPERCUT>>
+10:12:58.218 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:12:58.223 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+10:12:58.273 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 834566154, START <<UPPERCUT>>
+10:12:58.284 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 59708338, featureId 834566154, START <<UPPERCUT>>
+10:12:58.637 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+10:12:59.760 [main] DEBUG com.intuit.karate - response time in milliseconds: 1120
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-v/w14A/6KRFZlwpabq8HFNoR78E"
+1 < x-cloud-trace-context: eb9bf092e84dd6cdd0c8f285a79612fc;o=1
+1 < date: Thu, 04 Dec 2025 13:12:59 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDg1Mzk3OSwiZXhwIjoxNzcwMDM3OTc5fQ.AWM93ac7lymEUVUtqvOPnY8dGymSnCEJGLs8g3ygv44"}}
+
+10:12:59.768 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 59708338, featureId 834566154, FINISH <<UPPERCUT>>
+10:12:59.769 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 834566154, FINISH <<UPPERCUT>>
+10:12:59.769 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+10:12:59.776 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 798427331, featureId 724049644, START <<UPPERCUT>>
+10:12:59.796 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1781256648, START <<UPPERCUT>>
+10:12:59.801 [main] INFO  com.intuit.karate - Scenario name: 798427331##Dummy, featureFileName: helpers/Dummy.feature, id 2049943797, featureId 1781256648, START <<UPPERCUT>>
+10:12:59.988 [main] INFO  com.intuit.karate - Scenario name: 798427331##Dummy, featureFileName: helpers/Dummy.feature, id 2049943797, featureId 1781256648, FINISH <<UPPERCUT>>
+10:12:59.989 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 1781256648, FINISH <<UPPERCUT>>
+10:12:59.993 [main] INFO  com.intuit.karate - [print] jerome.veum 
+10:12:59.994 [main] INFO  com.intuit.karate - [print] Esse é o primeiro cenario 
+10:12:59.995 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 798427331, featureId 724049644, FINISH <<UPPERCUT>>
+10:13:00.002 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:13:00.005 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 1382397091, featureId 724049644, START <<UPPERCUT>>
+10:13:00.008 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 349156761, START <<UPPERCUT>>
+10:13:00.014 [main] INFO  com.intuit.karate - Scenario name: 1382397091##Dummy, featureFileName: helpers/Dummy.feature, id 531880129, featureId 349156761, START <<UPPERCUT>>
+10:13:00.050 [main] INFO  com.intuit.karate - Scenario name: 1382397091##Dummy, featureFileName: helpers/Dummy.feature, id 531880129, featureId 349156761, FINISH <<UPPERCUT>>
+10:13:00.050 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 349156761, FINISH <<UPPERCUT>>
+10:13:00.051 [main] INFO  com.intuit.karate - [print] woodrow.schuppe 
+10:13:00.052 [main] INFO  com.intuit.karate - [print] Esse é o segundo cenario 
+10:13:00.053 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 1382397091, featureId 724049644, FINISH <<UPPERCUT>>
+10:13:00.053 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 724049644, FINISH <<UPPERCUT>>
+10:13:00.903 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/Hooks.feature
+10:15:55.221 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:15:55.232 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1764854155224
+10:15:55.240 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 2037373465, START <<UPPERCUT>>
+10:15:56.615 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:15:56.622 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+10:15:56.645 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 947495104, START <<UPPERCUT>>
+10:15:56.656 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 517835807, featureId 947495104, START <<UPPERCUT>>
+10:15:57.023 [main] DEBUG com.intuit.karate - request:
+1 > POST https://conduit-api.bondaracademy.com/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 64
+1 > Host: conduit-api.bondaracademy.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karatezada@gmail.com","password":"karate123"}}
+
+10:15:58.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 1202
+1 < 200
+1 < x-powered-by: Express
+1 < vary: Origin
+1 < content-type: application/json; charset=utf-8
+1 < etag: W/"13d-ML5tgAFs7lBEsCylZWsX33xs/NE"
+1 < x-cloud-trace-context: 0d8056970f3e711bba3dec13d9ef0159;o=1
+1 < date: Thu, 04 Dec 2025 13:15:57 GMT
+1 < server: Google Frontend
+1 < Content-Length: 317
+{"user":{"email":"karatezada@gmail.com","username":"Karate112025","bio":null,"image":"https://conduit-api.bondaracademy.com/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozODY1N30sImlhdCI6MTc2NDg1NDE1NywiZXhwIjoxNzcwMDM4MTU3fQ.VK2725cBfuhsmW_xdzPR8rg9m4RpS682wtT09sR6nrU"}}
+
+10:15:58.238 [main] INFO  com.intuit.karate - Scenario name: Criar Token, featureFileName: helpers/CreateToken.feature, id 517835807, featureId 947495104, FINISH <<UPPERCUT>>
+10:15:58.239 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/CreateToken.feature, id: 947495104, FINISH <<UPPERCUT>>
+10:15:58.239 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+10:15:58.247 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 974901510, featureId 2037373465, START <<UPPERCUT>>
+10:15:58.254 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/Dummy.feature')
+10:15:58.255 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 302288392, START <<UPPERCUT>>
+10:15:58.259 [main] INFO  com.intuit.karate - Scenario name: 974901510##Dummy, featureFileName: helpers/Dummy.feature, id 798005055, featureId 302288392, START <<UPPERCUT>>
+10:15:58.429 [main] INFO  com.intuit.karate - Scenario name: 974901510##Dummy, featureFileName: helpers/Dummy.feature, id 798005055, featureId 302288392, FINISH <<UPPERCUT>>
+10:15:58.430 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: helpers/Dummy.feature, id: 302288392, FINISH <<UPPERCUT>>
+10:15:58.431 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/Dummy.feature')
+10:15:58.435 [main] INFO  com.intuit.karate - [print] brigida.baumbach 
+10:15:58.436 [main] INFO  com.intuit.karate - [print] Esse é o primeiro cenario 
+10:15:58.437 [main] INFO  com.intuit.karate - Scenario name: Primeiro Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 974901510, featureId 2037373465, FINISH <<UPPERCUT>>
+10:15:58.445 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:15:58.450 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 1549280234, featureId 2037373465, START <<UPPERCUT>>
+10:15:58.453 [main] INFO  com.intuit.karate - [print] brigida.baumbach 
+10:15:58.454 [main] INFO  com.intuit.karate - [print] Esse é o segundo cenario 
+10:15:58.455 [main] INFO  com.intuit.karate - Scenario name: Segundo Cenario, featureFileName: conduitApp/feature/Hooks.feature, id 1549280234, featureId 2037373465, FINISH <<UPPERCUT>>
+10:15:58.455 [main] INFO  c.r.u.testrunner.KarateTestRunner - FeatureFileName: conduitApp/feature/Hooks.feature, id: 2037373465, FINISH <<UPPERCUT>>
+10:15:59.204 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/feature/Hooks.feature
