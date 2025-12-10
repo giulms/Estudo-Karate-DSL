@@ -49,3 +49,25 @@ Feature: Atividade
         """
         And match response.articles[0].favoritesCount == 1
         And match response.articles[*].slug contains slugID
+
+    Scenario:  Conditional logic
+      Given path 'articles'
+      Given params { limit: 10, offset:0}
+      When method Get
+      Then status 200
+      * def favoritesCount = response.articles[0].favoritesCount
+      * def article = response.articles[0]
+
+#      Forma mais simples de fazer uma condicional IF (IF simples)
+#      * if (favoritesCount == 0) karate.call('classpath:helpers/addLikes.feature', article)
+
+#      Essa é uma outra forma de usar uma condicional IF (IF Else, a "?" separa a condição do valor se verdadeiro)
+#      É isso que está acontecendo aqui ->  condição ? valor_se_verdadeiro : valor_se_falso
+      * def result = favoritesCount == 0 ? karate.call('classpath:helpers/addLikes.feature', article).likesCount : favoritesCount
+#      Ele também chama a feature addLikes com o argumento article se o valor for 0. E pega o likes.Count e seta como valor da variável "result"
+
+      Given params { limit: 10, offset:0}
+      Given path 'articles'
+      When method Get
+      Then status 200
+      And match response.articles[0].favoritesCount == result
