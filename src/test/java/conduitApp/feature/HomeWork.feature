@@ -71,3 +71,25 @@ Feature: Atividade
       When method Get
       Then status 200
       And match response.articles[0].favoritesCount == result
+
+    Scenario:  Retry call
+#      Estou configurando a keyword "retry" para o número de tentativas se 10 e o intervalo entre elas ser 5 segundos
+      * configure retry = { count: 10, interval:5000 }
+
+      Given path 'articles'
+      Given params { limit: 10, offset:0}
+#      Estou fazendo ele utilizar o retry até a condição -> favoritesCount ser 1
+      And retry until response.articles[0].favoritesCount == 1
+      When method Get
+      Then status 200
+
+    Scenario: Sleep call
+#      Aqui estou setando a funcao sleep para ele esperar um determinado tempo antes de fazer algo (peguei a funcao do repo do karate)
+      * def sleep = function(pause){ java.lang.Thread.sleep(pause) }
+
+      Given path 'articles'
+      Given params { limit: 10, offset:0}
+      When method Get
+#      Quando digito "eval" ele apenas chama a funcao que eu quero mas nao armazena, diferente do def que chama e armazena
+      * eval sleep(5000)
+      Then status 200
