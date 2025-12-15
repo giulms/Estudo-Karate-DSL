@@ -93,3 +93,17 @@ Feature: Atividade
 #      Quando digito "eval" ele apenas chama a funcao que eu quero mas nao armazena, diferente do def que chama e armazena
       * eval sleep(5000)
       Then status 200
+
+    Scenario: Number to string
+      * def foo = 10
+#      Apenas colocando o +'' eu transformo int para string
+      * def json = {"bar": #(foo+'')}
+      * match json == {"bar": '10'}
+
+    Scenario: String to number
+      * def foo = '10'
+#      Posso transformar String para numero multiplicando por *1 ou utilizando a funcao parseInt
+      * def json = {"bar": #(parseInt(foo))}
+#      Se não quiser o que fique zero depois da tranformação posso usar dessa forma
+#      * def json = {"bar": #(~~parseInt(foo))}
+      * match json == {"bar": 10}
