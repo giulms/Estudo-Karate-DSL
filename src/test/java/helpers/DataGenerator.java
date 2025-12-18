@@ -17,7 +17,7 @@ public class DataGenerator {
         return username;
     }
 
-    //Exemplo do método GetRandomUsername sendo instanciado, ou seja não sendo Static
+//    Exemplo do metodo GetRandomUsername sendo instanciado, ou seja não sendo Static
     public String GetRandomInstanciado(){
         Faker faker = new Faker();
         String username = faker.name().username();
