@@ -42,15 +42,15 @@ class PerfTest extends Simulation {
 //      Não faz nada durante 4 segundos
       nothingFor(4 seconds),
 //      Injeta 1 usuário por segundos durante 10 segundos
-      constantUsersPerSec(1) during (10 seconds),
+      constantUsersPerSec(1) during (3 seconds),
 //      Injeta 2 usuário por segundos durante 10 segundos
-      constantUsersPerSec(2) during (10 seconds),
+//      constantUsersPerSec(2) during (10 seconds),
 //      Aumenta gradualmente a quantidade de usuários começando com 2 usuários até 10 durando um tempo de 20 segundos
-      rampUsersPerSec(2) to 10 during (20 seconds),
+//      rampUsersPerSec(2) to 10 during (20 seconds),
 //      Não faz nada durante 5 segundos
-      nothingFor(5 seconds),
+//      nothingFor(5 seconds),
 //      Injeta 1 usuário por segundos durante 5 segundos
-      constantUsersPerSec(1) during (5 seconds)
+//      constantUsersPerSec(1) during (5 seconds)
       ).protocols(protocol)
   )
 
