@@ -15,13 +15,15 @@ Feature: Articles
     * configure headers = { "Authorization": "#('Token ' + __gatling.token)" }
     And path 'articles'
     And request articleRequestBody
+#    Ao fazer isso eu separo no resultado HTML do teste para mostrar os resultados de cada requisição feita
+    And header karate-name = 'Title requested: ' + __gatling.Title
     When method Post
     Then status 201
     * def articleid = response.article.slug
 
 #   Posso usar o karate.pause direto na versão atual do Karate
-#    * karate.pause(5000)
-#
-#    Given path 'articles',articleid
-#    When method Delete
-#    Then status 204
+    * karate.pause(5000)
+
+    Given path 'articles',articleid
+    When method Delete
+    Then status 204

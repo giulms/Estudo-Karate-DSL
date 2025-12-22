@@ -15,7 +15,10 @@ class PerfTest extends Simulation {
     "/api/articles/{articleid}" -> Nil
   )
 
-//  protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")
+//  Define um resolvedor de nome personalizado para cada requisição feita, que tiver o header karate-name nesse caso
+  protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")
+
+//  Define qual ambiente o teste vai ser rodado, como está comentado ele vai rodar o ambiente que setei por default
 //  protocol.runner.karateEnv("perf")
 
 //  Esse "feeder" serve para alimentar o script com dados via arquivos csv
@@ -30,6 +33,7 @@ class PerfTest extends Simulation {
 
 //  No .feed eu seto a variavel que contém o caminho do arquivo csv que vou usar para alimentar com dados a exexucao do Scenario
 //  Posso utilizar mais de um feeder no scenario
+//  Talvez dê erro em uma das requisições POST pois ele não permite o nome repetido no mesmo Article no site Web
   val createArticle = scenario("Criar e Deletar artigo criado")
       .feed(csvFeeder)
       .feed(tokenFeeder)
@@ -44,13 +48,13 @@ class PerfTest extends Simulation {
 //      Injeta 1 usuário por segundos durante 10 segundos
       constantUsersPerSec(1) during (3 seconds),
 //      Injeta 2 usuário por segundos durante 10 segundos
-//      constantUsersPerSec(2) during (10 seconds),
+      constantUsersPerSec(2) during (10 seconds),
 //      Aumenta gradualmente a quantidade de usuários começando com 2 usuários até 10 durando um tempo de 20 segundos
-//      rampUsersPerSec(2) to 10 during (20 seconds),
+      rampUsersPerSec(2) to 10 during (20 seconds),
 //      Não faz nada durante 5 segundos
-//      nothingFor(5 seconds),
+      nothingFor(5 seconds),
 //      Injeta 1 usuário por segundos durante 5 segundos
-//      constantUsersPerSec(1) during (5 seconds)
+      constantUsersPerSec(1) during (5 seconds)
       ).protocols(protocol)
   )
 
